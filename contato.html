@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Manassés</title>
+        <meta charset="UTF-8"/>
+        <link rel=icon href=_imagens/favicon.png sizes="16x16" type="image/png">
+        <link rel="stylesheet" type="text/css" href="_css/slider.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/contato.css">
+        <link rel="stylesheet" type="text/css" href="_css/cotacao.css"/>
+        <script type="text/javascript" src="_javascript/jquery.js"></script>
+        <script type="text/javascript" src="_javascript/slider.js"></script>
+        <script type="text/javascript" src="_javascript/submenu.js"></script>
+        <script type="text/javascript" src="_javascript/cotacao.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    </head>
+    <body>
+            <div id="faixatopo">
+                <header id="tamanhofaixatopo">
+                    <p class="textotopo"><span>@</span> <a href="http://www.manassesassessoria.com.br/webmail" target="_blank">Webmail</a> | <span>&#9993;</span> <a href="contato.html">Fale Conosco</a> | <span>&#9990;</span> Telefone: +55 11 2872-4472</p>
+                    <div id="moedas"></div>
+                    <div id="info2"></div>
+                </header>
+            </div>
+
+            <div class="geral">
+                <div id="topo">
+                    <header>
+                        <figure class="logo">
+                            <a href="index.html"><img src="_imagens/img_manasses_logo.png"/></a> <img id="mapa" src="_imagens/img_mapa.png"/>
+                        </figure>
+                        <nav id="menu">
+                            <img id="icone" src="_imagens/img_contato2.png">
+                            <h1 class="menutitulo">Menu Príncipak</h1>
+                            <ul class="menup">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="empresa.html">Empresa</a></li>
+                                <li><a href="#">Atuação</a>
+                                    <ul class="smenu1">
+                                        <li><a href="comex.html">Comércio Exterior</a></li>
+                                        <li><a href="transporte.html">Transporte</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Serviços</a>
+                                    <ul class="smenu2">
+                                        <li><a href="exportacao.html">Exportação</a></li>
+                                        <li><a href="importacao.html">Importação</a></li>
+                                        <li><a href="radar.html">Radar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Utilidades</a>
+                                    <ul class="smenu2">
+                                        <li><a href="cotacao.html">Cotação</a></li>
+                                        <li><a href="formularios.html">Formulários</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contato.html">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+
+                <div id="corpo">
+                    <h4>Manassés > Contato</h4>
+                    <section><br/><br/>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7320.431266207059!2d-46.60577737462158!3d-23.45268514627583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef685ac396503%3A0x7622462124dd444d!2sR.%20Profa.%20Maria%20Hosni%20Cury%2C%20216%20-%20Parque%20Casa%20de%20Pedra%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002320-190!5e0!3m2!1spt-BR!2sbr!4v1572881483586!5m2!1spt-BR!2sbr"></iframe><br/>
+                        <img class="sombramapa" src="_imagens/img_sombra_mapa.png"/>
+                        
+                        <h3>Endereço</h3>
+                        <p>Rua Professora Maria Hosni Cury, 216 - Sala 1</p>
+                        <p>Parque Casa de Pedra - São Paulo - SP</p>
+                        <p>02320-190 - Brasil</p>
+                        <p><i>Próximo ao Ourinhos Hipermercado</i></p><br/>
+                        <h3>Horário do Escritório</h3>
+                        <p><img src="_imagens/img_relogio.png"> Segunda à Sexta - 08:30 às 18:00 </p>
+                    </section><br/><br/>
+
+                    <aside><br/><br/>
+                        <fieldset>
+                            <legend>Formulário de Contato</legend>
+                            <form action="_php/formulario.php" method="post">
+                                <p> <label for="empresa">Empresa</label>
+                                    <input type="text" name="empresa" id="empresa" size="37" maxlength="50" placeholder="Nome da Empresa" required/> </p>
+                                <p> <label for="cnpj">CNPJ</label>
+                                    <input type="text" name="cnpj" id="cnpj" size="37" maxlength="18" placeholder="xx.xxx.xxx/xxxx-xx" /> </p>
+                                <p> <label for="contato">Contato</label>
+                                    <input type="text" name="contato" id="contato" size="37" maxlength="70" placeholder="Giane Aparecida Silva" required/> </p>
+                                <p> <label for="end">Endereço</label>
+                                    <input type="text" name="end" id="end" size="37" maxlength="70" placeholder="Rua Professora Maria Hosni Cury, 216 - Sala 1" /> </p>
+                                <p> <label for="cidade">Cidade</label>
+                                    <input type="text" name="cidade" id="cidade" size="37" maxlength="20" placeholder="São Paulo" required/> </p>
+                                <p> <label for="tcom">Telefone</label>
+                                    <input type="text" name="tcom" id="tcom" size="37" maxlength="18" placeholder="xx xxxx-xxxx" required/> </p>
+                                <p> <label for="cel">Celular</label>
+                                    <input type="text" name="cel" id="cel" size="37" maxlength="18" placeholder="xx xxxxx-xxxx" required/> </p>
+                                <p> <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email" size="37" maxlength="30" placeholder="contato@tessamerica.com.br" required/> </p>
+                                <p> <label for="msg"> Mensagem</label>
+                                    <textarea name="msg" id="msg" cols="34" rows="3" placeholder="Deixe aqui sua Mensagem"></textarea></p><br/><br/>
+                                <input type="submit" id="env" value="enviar"><br/><br/>
+                            </form>
+                        </fieldset>
+                        <br/><br/>
+                        <h3>Contatos</h3>
+                        <p><b>Telefone: </b>11 2872.4472</p>
+                        <p><b>Celular: </b>11 97468.6582</p>
+                        
+                    </aside>
+                </div>
+                    <br/><br/>
+                    <div id="rodape">
+                        <footer id="tamanhorodape">
+                            <p class="textorodape">Copyright 2018 - 2019 - Manassés Assessoria Aduaneira Ltda - Todos os direitos reservados<br/>
+                                <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+                                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                            </p>
+                        </footer>
+                    </div>
+            </div>
+    </body>
+</html>
